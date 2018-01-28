@@ -4,7 +4,7 @@
 	<div id="body">
 		<h4><?php if(isset($summary) && $summary != "") echo $summary; ?></h4>
 
-		<form method="POST" action="http://localhost/ci/index.php/edit/input">
+		<form method="POST" action="<?=base_url('index.php/edit/input'); ?>">
 			<input type="hidden" name="id" value="<?php echo $entry->id; ?>"/>
 			Name: <input type="text" name="name" value="<?php echo $entry->name; ?>"/><br/>
 			Contact: <input type="text" name="contact" value="<?php echo $entry->contact; ?>"/> <br/>

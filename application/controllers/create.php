@@ -39,6 +39,7 @@ class Create extends CI_Controller {
 			$data['contact'] = $this->input->post('contact');
 			$this->messages_model->insert_entry($data);
 
+              redirect("/home/index");
 		//	redirect("/home/index?action=success");
 		}
 		else{
